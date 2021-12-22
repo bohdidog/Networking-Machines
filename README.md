@@ -24,7 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly responsive, in addition to restricting traffic to the network.
 - The advantage of a load balancer is the distribution of traffic across multiple servers. This effectively keeps the system from slowing as well as protects from a Ddos attack What is the advantage of a jump box?_
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____files and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to any files and system server.
 - Filebeat monitors the specified logs and forwards them to logstash or elastisearch.
 - Metricbeat monitors the metrics and statistics and ships it out to a specified output location.
 
@@ -33,7 +33,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name       | Function        | IP Address | Operating System |
 | ---------- | --------------- | ---------- | ---------------- |
-| Jump Box   | Gateway         | 10.0.0.4  | Linux            |
+| Jump Box   | Gateway         | 10.0.0.4   | Linux            |
 | Web-1      | Virtual Machine | 10.0.0.5   | Linux            |
 | Web-2      | Virtual Machine | 10.0.0.6   | Linux            |
 | ELK-SERVER | Virtual Machine | 10.1.0.4   | Linux            |
@@ -92,7 +92,7 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- _Ansible.config   How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- http://[Host I.P]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
