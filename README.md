@@ -21,7 +21,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly responsive, in addition to restricting traffic to the network.
 - The advantage of a load balancer is the distribution of traffic across multiple servers. This effectively keeps the system from slowing as well as protects from a Ddos attack What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____files and system _____.
@@ -42,7 +42,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ELK-SERVER machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK-SERVER machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 10.0.0.5, 10.0.0.6
 
 Machines within the network can only be accessed by the Jump-Box-Provisioner.
