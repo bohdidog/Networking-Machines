@@ -24,11 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly responsive, in addition to restricting traffic to the network.
 - The advantage of a load balancer is the distribution of traffic across multiple servers. This effectively keeps the system from slowing as well as protects from a Ddos attack What is the advantage of a jump box?_
 
-<<<<<<< HEAD
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to any files and system server.
-=======
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to any files and system settings.
->>>>>>> fdca910b6e0d02cc7bff8bb3166324a623d03165
 - Filebeat monitors the specified logs and forwards them to logstash or elastisearch.
 - Metricbeat monitors the metrics and statistics and ships it out to a specified output location.
 
