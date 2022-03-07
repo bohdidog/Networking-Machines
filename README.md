@@ -35,7 +35,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat monitors the metrics and statistics and ships it out to a specified output location.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name       | Function        | IP Address | Operating System |
 | ---------- | --------------- | ---------- | ---------------- |
@@ -53,7 +52,7 @@ Only the ELK-SERVER machine can accept connections from the Internet. Access to 
 
 Machines within the network can only be accessed by the Jump-Box-Provisioner.
 
-- The Jump-Box-Provisioner machine has access to the ELK-
+- The Jump-Box-Provisioner machine has access to the ELK-machine.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -65,10 +64,9 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- It will reguraly update the files and launch the preconfigured data to an external source without need for user interaction.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it will regularly update the files and launch the preconfigured data to an external source without need for user interaction.
 
-The playbook implements the following tasks:
+This playbook implements the following tasks:
 - Installs Docker 
 - Installs Python
 - Automatically configures the VM with Docker
@@ -96,9 +94,8 @@ SSH into the control node and follow the steps below:
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+  Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Ansible.config   How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - http://[Host I.P]:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
