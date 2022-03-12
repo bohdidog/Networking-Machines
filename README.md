@@ -41,6 +41,7 @@ The configuration details of each machine may be found below.
 | Jump Box   | Gateway         | 10.0.0.4   | Linux            |
 | Web-1      | Virtual Machine | 10.0.0.5   | Linux            |
 | Web-2      | Virtual Machine | 10.0.0.6   | Linux            |
+| Web-3.     | Virtual Machine | 10.0.0.7   | Linux            |
 | ELK-SERVER | Virtual Machine | 10.1.0.4   | Linux            |
 
 ### Access Policies
@@ -61,6 +62,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | Public Key i.e (20.110.147.113) |
 | Web-1    | No                  | 10.0.0.5                        |
 | Web-2    | No                  | 10.0.0.6                        |
+| Web-3    | No                  | 10.0.0.7                        |
 
 ### Elk Configuration
 
@@ -77,17 +79,17 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1- 10.0.0.5    Web-2- 10.0.0.6 
+- Web-1- 10.0.0.5    Web-2- 10.0.0.6   Web-3 10.0.0.7
 
 We have installed the following Beats on these machines:
 - Metricbeats, Filebeats
 
 These Beats allow us to collect the following information from each machine:
-- Filebeats, which monitors log files on the machines that are specified. It also sends the log data to Kibana for analysis. An example of this is the collections of logs in extensive detail on the specified monitoring software in this example, Kibana._
-- Metricbeats, which provides the metrics of the system and the servers of the specified machine. It will send the data to logstash. An example of this is the metric data that is shown on Kibana
+- Filebeats, which monitors log files on the machines that are specified. It also sends the log data to Kibana for analysis. An example of this is the collections   of logs in extensive detail on the specified monitoring software in this example, Kibana._
+- Metricbeats, which provides the metrics of the system and the servers of the specified machine. It will send the data to logstash. An example of this is the       metric data that is shown on Kibana
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook:
 
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook file to /etc/ansible/filebeat-playbook.yml.
